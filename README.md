@@ -7,13 +7,14 @@ llmpostor returns correctly-shaped responses for OpenAI, Anthropic, and Gemini A
 ## Usage
 
 ```sh
-# binary
+docker run --rm -p 8080:8080 ghcr.io/jasonmadigan/llmpostor:latest
+```
+
+Or build from source:
+
+```sh
 make build
 ./bin/llmpostor --port 8080
-
-# docker
-make docker-build
-docker run --rm -p 8080:8080 llmpostor:latest
 ```
 
 ## Endpoints
